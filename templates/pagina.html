@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Predicción de Cosecha de Uvas</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="icon" href="/static/images/logo.jpg" type="image/x-icon">
+
+
+</head>
+<body>
+    <header style="background-color: #1f1f1f; padding: 10px 20px;">
+        <nav style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+            <!-- Logo y título alineados horizontalmente -->
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <img src="/static/images/logo.jpg" alt="Viñedo" class="logo-img" style="width: 60px; height: auto;" />
+            </div>
+            <h1 style="color: #3bd7ff; font-size: 1.5rem; margin: 200;">Predicción de Cosecha de Uvas</h1>
+
+            <!-- Botón de cerrar sesión -->
+            <form action="/logout" method="POST" class="logout-form" style="margin: 0;">
+                <button type="submit" style="background-color: #3bd7ff; color: #1f1f1f; padding: 10px 20px; border-radius: 5px; border: none; font-size: 1rem; cursor: pointer; transition: background 0.3s;">
+                    Cerrar Sesión
+                </button>
+            </form>
+        </nav>
+    </header>
+    
+        
+        <main>
+            <section class="form-section">
+                <h2>Ingrese los Datos de la Cosecha</h2>
+                <form action="/predecir" method="POST">
+                    <label for="fecha">Fecha de Entrada:</label>
+                    <input type="date" id="fecha" name="fecha" required><br>
+                
+                    <label for="uva" class="select-uva">Tipo de uva Ingresada:</label>
+                    <select name="uva" id="uva" required>
+                        <option value="" disabled selected>Tipo de uva</option>
+                        <option value="1">Cabernet Sauvignon</option>
+                        <option value="2">Malbec</option>
+                        <option value="3">Chardonnay</option>
+                        <option value="4">Merlot</option>
+                        <option value="5">Ruby Cabernet</option>
+                        <option value="6">Cinsault</option>
+                        <option value="7">Fumé Blanc</option>
+                        <option value="8">Tempranillo</option>
+                    </select><br>
+                
+                    <label for="cantidad">Cantidad en Kg:</label>
+                    <input type="number" id="cantidad" name="cantidad" step="1" required><br>
+                    
+                    <label for="litros">Cantidad de litros producidos:</label>
+                    <input type="number" id="litros" name="litros" step="1" required><br>
+                
+                    <button type="submit">Predecir</button>
+                </form>
+            </section>
+
+            {% if prediccion is not none %}
+            <section id="predictionResult">
+                <h2>Resultado de la Predicción</h2>
+                <p id="resultText">
+                    Cantidad de uvas predicha para la fecha seleccionada: <strong>{{ prediccion }}</strong> uvas
+                </p>
+            </section>
+            
+            {% if mejor_comparacion %}
+            <section id="comparisonResult">
+                <h3>Comparación con los Datos de Entrenamiento</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Tipo de Uva</th>
+                            <th>Cantidad (Kg)</th>
+                            <th>Litros Producidos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ mejor_comparacion['fecha'] }}</td>
+                            <td>{{ mejor_comparacion['uva'] }}</td>
+                            <td>{{ mejor_comparacion['cantidad'] }}</td>
+                            <td>{{ mejor_comparacion['litros'] }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            {% endif %}
+            {% endif %}
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Predicción de Cosecha de Uvas | Diseñado por SHARK 2.0</p>
+        </footer>
+    </div>
+
+    <script>
+        // Cuando la página haya cargado completamente
+        window.addEventListener('load', function () {
+            // Agregar la clase 'loaded' al body para activar la animación de la página
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>

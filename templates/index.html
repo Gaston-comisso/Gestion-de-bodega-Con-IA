@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenidos a la Gestión de Uvas</title>
+    <link rel="stylesheet" href="/static/css2.css">
+    <link rel="icon" href="/static/images/logo.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <div id="content-container">
+        <header>
+            <h1>Gestión de Uvas y Enología</h1>
+            <nav>
+                <a href="pagina" class="button-link">Registrar Datos de Uva</a>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="intro-section">
+                <div class="intro-text">
+                    <h2>La Ciencia detrás del Vino</h2>
+                    <p>Bienvenido al sistema de gestión de uvas, donde los enólogos pueden registrar y analizar datos importantes para la elaboración del vino. Nuestro objetivo es proporcionar una herramienta eficaz y confiable para capturar la información relevante sobre la uva.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="/static/images/logo.jpg" alt="Viñedo" />
+                </div>
+            </section>
+            
+            <section class="info-section">
+                <h2>Datos Clave que se Pueden Registrar</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h3>Fecha de Cosecha</h3>
+                        <p>Registra la fecha de cosecha de las uvas para realizar un seguimiento preciso del proceso de producción.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Tipo de Uva</h3>
+                        <p>Selecciona el tipo de uva utilizado, para mantener un control detallado de la variedad empleada en la producción de vino.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Cantidad</h3>
+                        <p>Ingresa la cantidad de uvas cosechadas para gestionar mejor los recursos y la producción.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Litros de Vino</h3>
+                        <p>Indica los litros de vino producidos para un control detallado del rendimiento del proceso de vinificación.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Gestión de Uvas y Enología | Diseñado por SHARK 2.0</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script >
+                // Cuando la página haya cargado completamente
+                window.addEventListener('load', function () {
+            // Agregar la clase 'loaded' al body
+            document.body.classList.add('loaded');
+        });
+        window.addEventListener('load', () => {
+    const cards = document.querySelectorAll('.info-card');
+    cards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('visible'); // Aparecen deslizándose hacia la pantalla
+        }, index * 200); // Incrementa el tiempo para que se deslicen de forma secuencial
+    });
+});
+    </script>
+</body>
+</html>

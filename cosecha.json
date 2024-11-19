@@ -1,0 +1,62 @@
+[
+    {
+        "fecha": "2023-01-26",
+        "uva": "Cabernet Sauvignon",
+        "cantidad": 14096,
+        "litros": 1064
+    },
+    {
+        "fecha": "2023-04-06",
+        "uva": "Cabernet Sauvignon",
+        "cantidad": 17069,
+        "litros": 1850
+    },
+    {
+        "fecha": "2023-10-04",
+        "uva": "Chardonnay",
+        "cantidad": 16824,
+        "litros": 2225
+    },
+    {
+        "fecha": "2023-09-11",
+        "uva": "Malbec",
+        "cantidad": 9557,
+        "litros": 1201
+    },
+    {
+        "fecha": "2023-04-11",
+        "uva": "Malbec",
+        "cantidad": 19678,
+        "litros": 1608
+    },
+    {
+        "fecha": "2023-03-28",
+        "uva": "Cabernet Sauvignon",
+        "cantidad": 15294,
+        "litros": 1286
+    },
+    {
+        "fecha": "2023-10-31",
+        "uva": "Chardonnay",
+        "cantidad": 15218,
+        "litros": 1098
+    },
+    {
+        "fecha": "2023-01-01",
+        "uva": "Cabernet Sauvignon",
+        "cantidad": 10880,
+        "litros": 2530
+    },
+    {
+        "fecha": "2023-10-14",
+        "uva": "Malbec",
+        "cantidad": 12024,
+        "litros": 2452
+    },
+    {
+        "fecha": "2023-02-09",
+        "uva": "Cabernet Sauvignon",
+        "cantidad": 9762,
+        "litros": 2348
+    }
+]

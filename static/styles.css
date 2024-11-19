@@ -1,0 +1,323 @@
+/* Página principal estilos */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+nav a.button-link {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 15px;
+    background: #3bd7ff;
+    color: #1f1f1f;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+nav a.button-link:hover {
+    background: #29a6cf;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.intro-text, .intro-image {
+    width: 45%;
+}
+
+.intro-text h2 {
+    color: #3bd7ff;
+}
+
+
+
+.info-section {
+    text-align: center;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.info-card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.info-card h3 {
+    color: #3bd7ff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #1f1f1f;
+}
+/* Estilo para el formulario de registro */
+.form-section {
+    background: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.form-section h2 {
+    color: #3bd7ff;
+}
+
+.select-uva, label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #f0f0f0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #3bd7ff;
+    background: #2b2b2b;
+    color: #f0f0f0;
+}
+
+button[type="submit"] {
+    background-color: #3bd7ff;
+    color: #1f1f1f;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #29a6cf;
+}
+
+/* Estilo del enlace "Iniciar sesión" */
+.login-link {
+    margin-top: 20px;
+    color: #f0f0f0;
+}
+
+.login-link a {
+    color: #3bd7ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    color: #29a6cf;
+}
+
+/* Mensajes Flash */
+.flash-messages {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.flash-message {
+    background-color: #f8d7da; /* Rojo claro para errores */
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.flash-message.success {
+    background-color: #d4edda; /* Verde claro para éxito */
+    color: #155724;
+}
+
+/* Aplicar estilo uniforme a todos los tipos de input */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #3bd7ff;
+    background: #2b2b2b;
+    color: #f0f0f0;
+}
+
+/* Estilos para el nav */
+nav {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Asegura que los elementos estén separados a los extremos */
+    padding: 10px 20px;
+    background: #1f1f1f;
+}
+
+/* Estilo para el contenedor del logo */
+.intro-image {
+    display: flex;
+    align-items: center; /* Asegura que la imagen esté centrada verticalmente */
+    justify-content: center; /* Asegura que la imagen se mantenga centrada */
+}
+
+/* Estilo para la imagen del logo */
+.logo-img {
+    width: 100px; /* Ajusta el tamaño según prefieras */
+    height: auto;
+    border-radius: 50%; /* Para hacerlo circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para el formulario de cerrar sesión */
+.logout-form {
+    margin: 0;
+    display: flex;
+    align-items: center; /* Asegura que el botón esté alineado verticalmente */
+}
+
+/* Asegura que el botón de cerrar sesión se alinee correctamente */
+.logout-form button {
+    background-color: #3bd7ff;
+    color: #1f1f1f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button, select {
+    background-color: #262222;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #363030;
+}
+
+/* Estilos adicionales para el select */
+select {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+        /* Estilo para el contenedor del contenido */
+#content-container {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        /* Cuando la página esté lista, se hará visible */
+        body.loaded #content-container {
+            opacity: 1;
+            transform: translateY(0);
+        }
+/* Sección: Resultado de la Predicción */
+#predictionResult {
+    padding: 20px;
+    background-color: #2b2b2b; /* Fondo oscuro */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#predictionResult h2 {
+    color: #3bd7ff; /* Azul vibrante */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#predictionResult #resultText {
+    font-size: 1.2rem;
+    color: #f0f0f0; /* Texto claro */
+}
+
+/* Sección: Comparación con los Datos */
+#comparisonResult {
+    padding: 20px;
+    background-color: #1f1f1f; /* Fondo oscuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#comparisonResult h3 {
+    color: #3bd7ff; /* Azul vibrante */
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tabla Estilizada */
+#comparisonResult table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #f0f0f0; /* Texto claro */
+}
+
+#comparisonResult table thead tr {
+    background-color: #3bd7ff; /* Azul vibrante */
+    color: #1f1f1f; /* Texto oscuro */
+    text-align: left;
+}
+
+#comparisonResult table th,
+#comparisonResult table td {
+    padding: 10px;
+    border: 1px solid #3bd7ff; /* Borde azul vibrante */
+}
+
+#comparisonResult table tbody tr {
+    background-color: #1f1f1f; /* Fondo oscuro */
+}
+
+#comparisonResult table tbody tr:nth-child(even) {
+    background-color: #2b2b2b; /* Fondo ligeramente más claro */
+}
+
+#comparisonResult table tbody tr:hover {
+    background-color: #29a6cf; /* Azul más oscuro al pasar el mouse */
+    color: #1f1f1f; /* Texto oscuro */
+}
